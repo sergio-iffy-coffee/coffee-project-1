@@ -25,7 +25,7 @@ function updateCoffees(e) {
     console.log(searchedName.value);
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast || coffee.name.toLowerCase() === searchedName.value.toLowerCase()) { //ONLY exact roast and exact name property comes up
+        if (coffee.roast === selectedRoast || coffee.name.toLowerCase() === searchedName.value.toLowerCase() || selectedRoast === "All") { //ONLY exact roast and exact name property comes up
             filteredCoffees.push(coffee);
         }
     });
