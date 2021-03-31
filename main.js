@@ -20,12 +20,10 @@ function renderCoffees(coffees) {
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value; //grab roast value
-    var searchedName = document.getElementById("coffee-selection"); //grab search value
 
-    console.log(searchedName.value);
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast || coffee.name.toLowerCase() === searchedName.value.toLowerCase() || selectedRoast === "All") { //ONLY exact roast and exact name property comes up
+        if (coffee.roast === selectedRoast || selectedRoast === "All") { //ONLY exact roast and exact name property comes up
             filteredCoffees.push(coffee);
         }
     });
@@ -34,7 +32,6 @@ function updateCoffees(e) {
 
 function updateCoffees2(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
-    var selectedRoast = roastSelection.value; //grab roast value
     var searchedName = document.getElementById("coffee-selection"); //grab search value
 
     console.log(searchedName.value);
