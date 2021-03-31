@@ -37,7 +37,7 @@ function updateCoffees2(e) {
     console.log(searchedName.value);
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
-        if (coffee.name.toLowerCase() === searchedName.value.toLowerCase()) { //ONLY exact roast and exact name property comes up
+        if (coffee.name.toLowerCase().indexOf(searchedName.value) >= 0) {
             filteredCoffees.push(coffee);
         }
     });
@@ -66,10 +66,14 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
-var coffeeSearch = document.querySelector('#coffee-search')
+var coffeeSubmit = document.querySelector('#coffee-submit')
+var coffeeSelection = document.querySelector('#coffee-selection')
 
 tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
 
-coffeeSearch.addEventListener('click', updateCoffees2);
+coffeeSelection.addEventListener('keyup', updateCoffees2)
+
+coffeeSubmit.addEventListener('click', updateCoffees2);
+
