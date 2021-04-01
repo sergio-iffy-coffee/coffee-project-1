@@ -53,7 +53,7 @@ function newCoffee(e){
     coffees.unshift(addedCoffee);
     for(var i = 1; i < coffees.length - 1; i++) {
         if (newCoffeeName.value.toLowerCase() === coffees[i].name.toLowerCase()) {
-            coffees.shift(addedCoffee)
+            coffees.shift(addedCoffee);
         }
     }
     tbody.innerHTML = renderCoffees(coffees);
