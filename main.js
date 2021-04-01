@@ -44,6 +44,12 @@ function updateCoffees2(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
+function newCoffee(cawfee){
+    cawfee.preventDefault();
+}
+
+
+
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
     {id: 1, name: 'Light City', roast: 'Light'},
