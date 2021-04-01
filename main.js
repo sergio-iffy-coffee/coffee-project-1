@@ -44,10 +44,18 @@ function updateCoffees2(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
-function newCoffee(cawfee){
-    cawfee.preventDefault();
-}
+var newRoast = document.getElementById("roast-new")
+var newCoffeeName = document.getElementById("coffee-name-new");
 
+function newCoffee(coffeeName, coffeeRoast){
+    coffee.preventDefault();
+    var addedCoffee = [];
+
+
+
+
+    tbody.innerHTML = renderCoffees(addedCoffee);
+}
 
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
