@@ -18,6 +18,22 @@ td, th {
     padding: 5px 10px;
 }
 
+#roast-selection {
+    border-radius: .25em;
+}
+
+#coffee-selection {
+    border-radius: .25em;
+}
+
+#roast-new {
+    border-radius: .25em;
+}
+
+#coffee-name-new {
+    border-radius: .25em;
+}
+
 .col {
     border: 1px solid red;
 }
