@@ -11,53 +11,60 @@
 </head>
 <body>
     <div class="container">
-        <h1>Cafe</h1>
-        <div id="coffee-original">
-            <form>
-                <h2>Look up one of our amazing coffees ;)</h2>
-                <h3> Roast </h3>
-                <label for="roast-selection"></label>
-                <select id="roast-selection">
-                    <option>All</option>
-                    <option>Light</option>
-                    <option>Medium</option>
-                    <option>Dark</option>
-                </select>
-                <input id="submit" type="submit"/>
-            </form>
+        <h1 class="text-center">Cafe de Iffy</h1>
+        <p class="font-italic text-center">Here in Cafe de Iffy, we are dedicated to bring you the best cafe experience you could ever imagine! Choose one of our fourteen world famous coffees, from Light City to our best selling City.</p>
+        <div class="row">
+            <div class="col">
+            <div id="coffee-original">
+                <form>
+                    <h2 class="mb-3">Look up one of our amazing coffees >;)</h2>
+                    <h3 class="mb-3"> Roast </h3>
+                    <label for="roast-selection"></label>
+                    <select id="roast-selection">
+                        <option>All</option>
+                        <option>Light</option>
+                        <option>Medium</option>
+                        <option>Dark</option>
+                    </select>
+                    <input id="submit" type="submit"/>
+                </form>
 
-            <form>
-                <h3>Coffee Name</h3>
-                <label for="coffee-selection"></label>
-                <input id="coffee-selection" type="text" placeholder="Find a coffee!">
-                <input id="coffee-submit" type="submit"/>
-            </form>
-        </div>
+                <form>
+                    <h3 class="mt-3 mb-3">Coffee Name</h3>
+                    <label for="coffee-selection"></label>
+                    <input id="coffee-selection" type="text" placeholder="Find a coffee!">
+                    <input id="coffee-submit" type="submit"/>
+                </form>
+            </div>
 
-        <div id="coffee-add">
-            <h2>Add a Coffee!</h2>
-            <form>
-                <h3> Roast </h3>
-                <label for="roast-new"></label>
-                <select id="roast-new">
-                    <option>Light</option>
-                    <option>Medium</option>
-                    <option>Dark</option>
-                </select>
-            </form>
+            <div id="coffee-add">
+                <h2 class="mt-4 mb-3">Add a Coffee!</h2>
+                <form>
+                    <h3 class="mb-3">Roast</h3>
+                    <label for="roast-new"></label>
+                    <select id="roast-new">
+                        <option>Light</option>
+                        <option>Medium</option>
+                        <option>Dark</option>
+                    </select>
+                </form>
 
-            <form>
-                <h3>Name</h3>
-                <label for="coffee-name-new"></label>
-                <input id="coffee-name-new" type="text">
-                <input id="coffee-name-new-submit" type="submit"/>
-            </form>
-        </div>
+                <form>
+                    <h3 class="mt-3 mb-3">Name</h3>
+                    <label for="coffee-name-new"></label>
+                    <input id="coffee-name-new" type="text">
+                    <input id="coffee-name-new-submit" type="submit"/>
+                </form>
+            </div>
+            </div>
 
-        <div>
-            <table>
-                <tbody id="coffees"></tbody>
-            </table>
+            <div class="col">
+            <div>
+                <table>
+                    <tbody id="coffees"></tbody>
+                </table>
+            </div>
+            </div>
         </div>
     </div>
 <!--        Javascript linked below-->

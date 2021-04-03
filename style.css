@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     /*background-image: url("photo-1501339847302-ac426a4a7cbb.jpeg");*/
+    background-color: tan;
 }
 
 
@@ -12,4 +13,12 @@ table {
 td, th {
     border: 1px solid black;
     padding: 5px 10px;
+}
+
+.col {
+    border: 1px solid red;
+}
+
+.row {
+    border: 1px solid blue;
 }
