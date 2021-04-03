@@ -1,7 +1,8 @@
 body {
     font-family: roboto condensed, serif;
-    /*background-image: url("photo-1501339847302-ac426a4a7cbb.jpeg");*/
+    background-image: url("images.jpeg");
     background-color: tan;
+    color: midnightblue;
 }
 
 .intro {
@@ -40,4 +41,10 @@ td, th {
 
 .row {
     border: 1px solid blue;
+}
+
+.submitButtons {
+    border-radius: .25em;
+    background-color: cornflowerblue;
+    font-family: cursive;
 }
