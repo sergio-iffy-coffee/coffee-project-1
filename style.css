@@ -1,9 +1,12 @@
 body {
-    font-family: sans-serif;
+    font-family: roboto condensed, serif;
     /*background-image: url("photo-1501339847302-ac426a4a7cbb.jpeg");*/
     background-color: tan;
 }
 
+.intro {
+
+}
 
 table {
     border-collapse: collapse;
