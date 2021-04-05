@@ -48,3 +48,16 @@ td, th {
     background-color: cornflowerblue;
     font-family: cursive;
 }
+
+.col {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+tbody#coffees {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
